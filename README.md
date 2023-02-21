@@ -1,1 +1,1 @@
-#What each script does
+These projects act as am introduction to C	
