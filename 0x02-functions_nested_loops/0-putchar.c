@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - prints _putchar
@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char put = "_putchar/n";
+	char put[] = "_putchar/n";
 	int index;
 
 	for(index = 0; put[index]; index++)
