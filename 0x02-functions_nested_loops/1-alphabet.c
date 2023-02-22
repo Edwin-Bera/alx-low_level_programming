@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *  * print_alphabet - prints alphabet in lowercase
- *   * Return: does not return a value
- *    */
+ * print_alphabet - prints alphabet in lowercase
+ * Return: does not return a value
+ */
 void print_alphabet(void)
 {
 	char letter = 'a';
