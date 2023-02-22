@@ -1,5 +1,7 @@
 #include "main.h"
-void print_alphabet_x10(void)
+/**
+ * print_alphabet_x10(void)
+void print_alphabet_x10(void) - prints the lowecase alphabet 10 times
 {
 	int n = 0;
 	for (; n <= 10; n++)
