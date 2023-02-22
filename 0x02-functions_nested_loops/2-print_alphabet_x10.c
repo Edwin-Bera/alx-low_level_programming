@@ -3,7 +3,7 @@
  * print_alphabet_x10 - prints the lowecase alphabet 10 times
  *
  */
-void print_alphabet_x10(void)s
+void print_alphabet_x10(void)
 {
 	int n = 0;
 
