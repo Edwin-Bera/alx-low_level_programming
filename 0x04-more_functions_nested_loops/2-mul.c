@@ -7,4 +7,6 @@
  * Return: the product of @a snd @b
  */
 int mul(int a, int b)
+{
 	return (a * b);
+}
