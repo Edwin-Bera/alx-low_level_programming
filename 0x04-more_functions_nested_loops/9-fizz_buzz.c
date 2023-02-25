@@ -27,7 +27,7 @@ int main(void)
  */
 void fizzBuzz(void)
 {
-	int num = 0
+	int num = 0;
 		for (; num <= 100; num++)
 		{
 			if (num % 3 == 0 && num % 5 == 0)
@@ -38,6 +38,8 @@ void fizzBuzz(void)
 				printf("Buzz");
 			else
 				printf("%i", num);
+
+			putchar(' ');
 		}
 	putchar('\n');
 }
