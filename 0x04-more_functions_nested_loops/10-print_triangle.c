@@ -15,6 +15,7 @@ void print_triangle(int size)
 	{
 		for (spaces = flag - 1; spaces > 0; spaces--)
 			_putchar(' ');
+		spaces = flag -1;
 
 		for (draw = size - spaces; draw > 0; draw--)
 			_putchar('#');
