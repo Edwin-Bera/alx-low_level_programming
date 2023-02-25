@@ -38,8 +38,8 @@ void fizzBuzz(void)
 				printf("Buzz");
 			else
 				printf("%i", num);
-
-			putchar(' ');
+			if (num < 100)
+				putchar(' ');
 		}
-	putchar('\n');
+		putchar('\n');
 }
