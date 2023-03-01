@@ -4,7 +4,7 @@
 /**
  * print_array - prints n elements of an array of integers
  * @a: the array
- * @:- number of elements to be printed
+ * @n: number of elements to be printed
  */
 void print_array(int *a, int n)
 {
@@ -15,6 +15,7 @@ void print_array(int *a, int n)
 		printf("%d", a[index]);
 		if (index + 1 != n)
 			printf(", ");
+		index++;
 	}
 	_putchar('\n');
 }
