@@ -11,7 +11,7 @@ void puts_half(char *str)
 
 	while (str[index] != '\0')
 		index++;
-	index -= 1;
+	index -= 2;
 
 	if (index % 2)
 		half = (index - 1) / 2;
@@ -20,4 +20,5 @@ void puts_half(char *str)
 
 	for (; half <= index; half++)
 		_putchar(str[half]);
+	_purchar('\n');
 }
