@@ -13,7 +13,7 @@ void rev_string(char *s)
 	while (s[index] != '\0')
 		index++;
 
-	for (; index != 0; revIndex++)
+	for (; index != revIndex; revIndex++)
 	{
 		rev = s[revIndex];
 		s[revIndex] = s[index];
