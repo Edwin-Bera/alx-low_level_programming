@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strcat - appends the string src to dest
+ * _strncat - appends the string src to dest
  * @dest: destinaton
  * @src: source
+ * @n: number of characters o be copied
  * Return: the full string
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int counter;
 
@@ -16,7 +17,7 @@ char *_strcat(char *dest, char *src)
 
 	int i;
 
-	for (i =0; src[i] != '\0'; i++)
+	for (i =0; src[i] != '\0' && i <= n; i++)
 		dest[counter + i] = src[i];
 	
 	return (dest);
