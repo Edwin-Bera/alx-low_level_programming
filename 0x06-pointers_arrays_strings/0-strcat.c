@@ -12,7 +12,6 @@ char *_strcat(char *dest, char *src)
 
 	while (dest[counter] != '\0')
 		counter++;
-	counter--;
 
 	int i = 0;
 
