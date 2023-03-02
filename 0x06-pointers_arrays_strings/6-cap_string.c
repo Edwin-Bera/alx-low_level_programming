@@ -11,23 +11,18 @@ char *string_toupper(char *c)
 
 	for (; c[index] != '\0'; index++)
 		if (c[index] >= 'a' && c[index] <= 'z')
-			switch (c[index - 1])
-			{
-				case ' ':
-				case '\t':
-				case '\n':
-				case ',':
-				case ';':
-				case '.':
-				case '!':
-				case '?':
-				case '"':
-				case '(':
-				case ')':
-				case '{':
-				case '}':
-					c[index] -= 32;
-					break;
-			}
+			if (c[index - 1] == ',' || c[index - 1] == ';' ||
+					c[index - 1] == '.' ||
+					c[index - 1] == '!' ||
+					c[index - 1] == '\t' ||
+					c[index - 1] == ' ' ||
+					c[index - 1] == '\n' ||
+					c[index - 1] == '?' ||
+					c[index - 1] == '"' ||
+					c[index - 1] == '(' ||
+					c[index - 1] == ')' ||
+					c[index - 1] == '{' ||
+					c[index - 1] == '{')
+				c[index] -= 32;
 	return (c);
 }
