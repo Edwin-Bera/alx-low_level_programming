@@ -11,7 +11,8 @@ char *string_toupper(char *c)
 
 	for (; c[index] != '\0'; index++)
 		if (c[index] >= 'a' && c[index] <= 'z')
-			if (c[index - 1] == ',' || c[index - 1] == ';' ||
+			if (c[index - 1] == ',' ||
+					c[index - 1] == ';' ||
 					c[index - 1] == '.' ||
 					c[index - 1] == '!' ||
 					c[index - 1] == '\t' ||
