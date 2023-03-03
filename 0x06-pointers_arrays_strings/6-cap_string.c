@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * string_toupper -  changes all lowercase letters of a string to uppercase
+ * cap_string -  changes all lowercase letters of a string to uppercase
  * @c: the string
  * Return: a string whose lettersy are only uppercase
  */
-char *string_toupper(char *c)
+char *cap_string(char *c)
 {
 	int index = 0;
 
