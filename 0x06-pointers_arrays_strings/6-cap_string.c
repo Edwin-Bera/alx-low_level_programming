@@ -9,21 +9,24 @@ char *string_toupper(char *c)
 {
 	int index = 0;
 
-	for (; c[index] != '\0'; index++)
-		if (c[index] >= 'a' && c[index] <= 'z')
-			if (c[index - 1] == ',' ||
-					c[index - 1] == ';' ||
-					c[index - 1] == '.' ||
-					c[index - 1] == '!' ||
-					c[index - 1] == '\t' ||
-					c[index - 1] == ' ' ||
-					c[index - 1] == '\n' ||
-					c[index - 1] == '?' ||
-					c[index - 1] == '"' ||
-					c[index - 1] == '(' ||
-					c[index - 1] == ')' ||
-					c[index - 1] == '{' ||
-					c[index - 1] == '{')
-				c[index] -= 32;
+	while (c[index] != '\0')
+	{
+		while (!(c[index] >= 'a' && c[index] <= 'z'))
+			index++;
+
+		if (c[index - 1] == ',' ||
+				c[index - 1] == ';' ||
+				c[index - 1] == '.' ||
+				c[index - 1] == '!' ||
+				c[index - 1] == '\t' ||
+				c[index - 1] == ' ' ||
+				c[index - 1] == '\n' ||
+				c[index - 1] == '?' ||
+				c[index - 1] == '"' ||
+				c[index - 1] == '(' ||
+				c[index - 1] == ')' ||
+				c[index - 1] == '{' ||
+				c[index - 1] == '{')
+			c[index] -= 32;
 	return (c);
 }
