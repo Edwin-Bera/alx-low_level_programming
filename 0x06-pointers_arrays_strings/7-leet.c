@@ -10,7 +10,7 @@ char *leet(char *c)
 {
 	int index;
 	int leetIndex;
-	char leet[8] = "OLEA??T";
+	char leet[] = "OLEA??T";
 
 	for (index = 0; c[index] != '\0'; index++)
 		for (leetIndex2 = 0; leetIndex <= 7; leetIndex++)
