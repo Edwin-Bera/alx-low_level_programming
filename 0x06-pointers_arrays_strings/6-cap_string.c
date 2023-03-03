@@ -28,5 +28,6 @@ char *string_toupper(char *c)
 				c[index - 1] == '{' ||
 				c[index - 1] == '{')
 			c[index] -= 32;
+	}
 	return (c);
 }
