@@ -16,5 +16,5 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[index] == s2[index] && s1[index] && s2[index])
 		index++;
-	return (s1[index - s2[index]);
+	return (s1[index] - s2[index]);
 }
