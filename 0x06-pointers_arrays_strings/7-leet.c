@@ -13,7 +13,7 @@ char *leet(char *c)
 	char leet[] = "OLEA??T";
 
 	for (index = 0; c[index] != '\0'; index++)
-		for (leetIndex2 = 0; leetIndex <= 7; leetIndex++)
+		for (leetIndex = 0; leetIndex <= 7; leetIndex++)
 			if (c[index] == leet[leetIndex] || c[index] - 32 == leet[leetIndex])
 				c[index] = leetIndex + '0';
 	return (c);
