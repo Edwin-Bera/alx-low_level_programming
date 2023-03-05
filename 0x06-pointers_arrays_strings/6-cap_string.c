@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * cap_string -  changes all lowercase letters of a string to uppercase
+ * cap_string -  Capitalises the first letter of each word
  * @c: the string
- * Return: a string whose lettersy are only uppercase
+ * Return: a string whose words begin all with an uppercase letter
  */
 char *cap_string(char *c)
 {
