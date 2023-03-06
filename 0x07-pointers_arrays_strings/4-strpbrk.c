@@ -7,7 +7,7 @@
  * @accept: the prefix substring
  * Return: a pointer to the first match
  */
-unsigned int _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int inner, index = 0;
 
