@@ -10,7 +10,7 @@ int find_sqrt(int num, int sqrt)
 {
 	if (sqrt * sqrt == num)
 		return (sqrt);
-	else if (root == num / 2)
+	else if (sqrt == num / 2)
 		return (-1);
 	else
 		return (find_sqrt(num, root + 1));
