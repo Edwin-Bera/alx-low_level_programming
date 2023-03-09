@@ -8,7 +8,7 @@
  */
 int find_sqrt(int num, int sqrt)
 {
-	if (sqrt * sqrt == mun)
+	if (sqrt * sqrt == num)
 		return (sqrt);
 	else if (root == num / 2)
 		return (-1);
