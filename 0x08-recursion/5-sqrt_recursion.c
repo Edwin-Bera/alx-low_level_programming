@@ -4,14 +4,14 @@
  * @n: the number
  * Return: natural square root
  */
- int _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	int d = 1;
 
-	if (d > n / 2)
-		return (-1);
-	else if (n / d == d)
+	if (d * d == n)
 		return (d);
+	else if (d * d < n)
+		return (-1);
 	else
 	{
 		d++;
