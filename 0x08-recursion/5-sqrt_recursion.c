@@ -13,7 +13,7 @@ int find_sqrt(int num, int sqrt)
 	else if (sqrt == num / 2)
 		return (-1);
 	else
-		return (find_sqrt(num, root + 1));
+		return (find_sqrt(num, sqrt + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
