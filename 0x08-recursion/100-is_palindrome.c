@@ -16,14 +16,15 @@ int get_length(char *string, int size)
  * check_palindrome - checks whether a word is a palindrome or not
  * @string: string containing the word
  * @size: size of the string
+ * @index: fot transversing string
  * Return: 1 if the string is a palindrome, else 0
  */
-int check_palindrome(char *string, int size)
+int check_palindrome(char *string, int size, int index)
 {
 	if (size - 1 == 1)
 		return (1);
-	else if (*string == string[size - 1])
-		return (check_palindrome(string + 1, size - 1));
+	else if (string[index] == string[size - 1])
+		return (check_palindrome(string, size - 1, index + 1));
 	else
 		return (0);
 }
@@ -36,11 +37,12 @@ int check_palindrome(char *string, int size)
 int is_palindrome(char *s)
 {
 	int length = 0;
+	int i = 0;
 
 	length = get_length(s, length);
 	if (length <= 1)
 		return (1);
 	else
-		return (check_palindrome(s, length));
+		return (check_palindrome(s, length, i));
 }
 

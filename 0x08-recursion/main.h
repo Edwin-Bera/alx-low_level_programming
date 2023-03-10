@@ -9,5 +9,5 @@ int find_sqrt(int num, int sqrt);
 int is_prime_number(int n);
 int primeCheck(int n, int check);
 int get_length(char *string, int size);
-int check_palindrome(char *string, int size);
+int check_palindrome(char *string, int size, int index);
 int is_palindrome(char *s);
