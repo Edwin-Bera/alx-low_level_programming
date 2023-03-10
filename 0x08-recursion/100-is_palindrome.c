@@ -10,7 +10,7 @@ int get_length(char *string, int size)
 	if (!(string[size]))
 		return (0);
 	else
-		return (1 + get_lenght(string, size + 1));
+		return (1 + get_length(string, size + 1));
 }
 /**
  * check_palindrome - checks whether a word is a palindrome or not
