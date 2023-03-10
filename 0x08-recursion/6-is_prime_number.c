@@ -2,7 +2,7 @@
 
 /**
  * primeCheck - checks if a number is a prime number
- * @a: the number
+ * @n: the number
  * @check: a number @a will be checked against
  * Return: 1 if prime, else 0
  */
