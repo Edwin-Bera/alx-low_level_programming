@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				return (1);
 			}
-		num += atoi(argv[inner]);
+		num += atoi(argv[i]);
 	}
 	printf("%d\n", num);
 	return (0);
