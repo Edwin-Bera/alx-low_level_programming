@@ -9,7 +9,7 @@
 int main(int argc, char **argv)
 {
 	int num = 0;
-	int i = 0;
+	int i = 1;
 	int inner;
 
 	if (argc < 2)
