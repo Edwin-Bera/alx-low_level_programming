@@ -13,5 +13,5 @@ int main(int argc, char **argv)
 	for (; index < argc; index++)
 		printf("%s\n", argv[index]);
 
-	return 0;
+	return (0);
 }
