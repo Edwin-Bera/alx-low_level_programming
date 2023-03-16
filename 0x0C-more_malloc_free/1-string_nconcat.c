@@ -27,11 +27,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; i < num1; i++)
-		str[i] = s1[i];
+	if (s1 != NULL)
+		for (i = 0; i < num1; i++)
+			str[i] = s1[i];
 
-	for (i = 0; i < num2; i++)
-		str[i + num1] = s2[i];
+	if (s2 != NULL)
+		for (i = 0; i < num2; i++)
+			str[i + num1] = s2[i];
 
 	str[num1 + num2] = '\0';
 	return (str);
