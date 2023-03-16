@@ -21,6 +21,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			num2++;
 		num2++;
 	}
+	if (num2 + num1 == 0)
+		return ('\0');
 	if (n < num2)
 		num2 = n;
 
