@@ -19,7 +19,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		for (i = 0; s2[i]; i++)
 			num2++;
-		num2++;
 	}
 	if (num2 + num1 == 0)
 		return ('\0');
@@ -39,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (i = 0; i < num2; i++)
 			str[i + num1] = s2[i];
 
-	str[num1 + num2 - 1] = '\0';
+	str[num1 + num2] = '\0';
 	return (str);
 }
 
