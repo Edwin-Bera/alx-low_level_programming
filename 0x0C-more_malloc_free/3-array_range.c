@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 	if (counter == NULL)
 		return (NULL);
 
-	for (num = 0; min + num <= max; min++)
+	for (num = 0; min + num <= max; num++)
 		counter[num] = min + num;
 
 	return (counter);
