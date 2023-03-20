@@ -1,3 +1,4 @@
-#ifndef ABS
-#define ABS(x) ((x < 0)? (int)x * -1 : x)
+#ifndef ABSOLUTE_H
+#define ABSOLUTE_H
+#define ABS(x) ((x < 0) ? -x : x)
 #endif
