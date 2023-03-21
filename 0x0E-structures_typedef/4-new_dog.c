@@ -9,16 +9,12 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (name == NULL)
-		name = "";
-	if (owner == NULL)
-		owner = "";
-
-	if (d == NULL)
-		d = malloc(sizeof(struct dog));
-	d->name = name;
-	d->owner = owner;
-	d->age = age;
+	if (name != NULL && owner != NULL)
+	{
+		d->name = name;
+		d->owner = owner;
+		d->age = age;
+	}
 }
 /**
  * new_dog - creates an object of type dog
@@ -33,9 +29,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	ptr = malloc(sizeof(dog_t));
 
-	init_dog(ptr, name, age, owner);
 	if (ptr == NULL)
 		return (NULL);
+
+	init_dog(ptr, name, age, owner);
+	if (ptr == NULL || ptr->name == NULL || ptr->owner == NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
 
 	return (ptr);
 }
