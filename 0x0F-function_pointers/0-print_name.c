@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * print_name - prints a name defined by the string passed to it
  * @name: the sstring in question
@@ -6,5 +7,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name != NULL)
+		f(name);
 }
