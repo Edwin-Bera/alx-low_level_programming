@@ -3,10 +3,12 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include "main.h"
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/**
+ * read_textfile - prints out contents of a text file
+ * @filename: name of file
+ * @letters: number of bytees to be printed
+ * Return: 0 if it fails, else ereturns number of bytes printed
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int readFile = open(filename, O_RDONLY);
@@ -21,10 +23,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	else if (num > 0)
 		letters = num;
-	//text[letters] = '\0';
-
-	//for(; *text != '\0'; text++)
-	//	_putchar(*text);
 
 	close(readFile);
 
