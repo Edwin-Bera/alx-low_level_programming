@@ -5,12 +5,12 @@
 #include "main.h"
 #include <string.h>
 /**
- * append_text - creates a file
+ * append_text_to_file - creates a file
  * @filename: name of the file
  * @text_content: text to br written into the file
- * return: 1 if successful, else -1
+ * Return: 1 if successful, else -1
  */
-int append_text(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int err;
 	int file = open(filename, O_RDWR | O_APPEND);
