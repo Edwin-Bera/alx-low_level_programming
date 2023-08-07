@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - returns a copy of the provided string
+ * _stdrup - returns a copy of the provided string
  * @str: the user provided string
  * Return: a pointer to the first element in the sequence
  */
