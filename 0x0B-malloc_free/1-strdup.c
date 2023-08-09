@@ -5,7 +5,7 @@
  * @str: the user provided string
  * Return: a pointer to the first element in the sequence
  */
-char *_stdrup(char str)
+char *_stdrup(char *str)
 {
 	int size = 0, i = 0;
 	char *ptr;
