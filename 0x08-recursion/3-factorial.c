@@ -4,7 +4,7 @@
  * @n: the given number
  * Return: he factorial if the given number
  */
-int factorial (int n)
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
