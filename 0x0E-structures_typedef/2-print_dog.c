@@ -2,7 +2,7 @@
 #include "dog.h"
 /**
  * print_dog - prints out the value of vaariable of type dog
- * @d - a variable of type dog
+ * @d: a variable of type dog
  * Return: void
  */
 void print_dog(struct dog *d)
@@ -15,7 +15,11 @@ void print_dog(struct dog *d)
 		else
 			printf("%s\n", d->name);
 
-		printf("Age: %f\n", d->age);
+		printf("Age: ");
+		if (d->age == NULL)
+			printf("(nil)\n");
+		else
+			printf("%f\n", d->age);
 
 		printf("Owner: ");
 		if (d->owner == NULL)
