@@ -17,7 +17,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	init_dog(ptr, name, age, owner);
-	if (ptr == NULL || ptr->name == NULL || ptr->owner == NULL)
+	if (ptr == NULL || ptr->name == "" || ptr->owner == "")
 	{
 		free(ptr);
 		return (NULL);
@@ -36,12 +36,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (name == NULL)
-		name = "";
+		d->name = "";
 	else
 		d->name = name;
 
 	if (owner == NULL)
-		owner = "";
+		d->owner = "";
 	else
 		d->owner = owner;
 	d->age = age;
