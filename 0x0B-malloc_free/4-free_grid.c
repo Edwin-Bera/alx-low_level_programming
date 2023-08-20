@@ -2,8 +2,9 @@
 #include "main.h"
 /**
  * free_grid - frees a two dimensional int array
- * @grid: a two dimentional array
+ * @grid: a two dimentional aray
  * @height: rows
+ * Return: void
  */
 void free_grid(int **grid, int height)
 {

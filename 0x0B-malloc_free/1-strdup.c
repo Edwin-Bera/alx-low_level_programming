@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _stdrup - returns a copy of the provided string
- * @str: the user provided string
- * Return: a pointer to the first element in the sequence
+ * _strdup - copies the provided string
+ * @str: the inputed string
+ * Return: a pointer to the firls element of the pointer
  */
-char *_stdrup(char *str)
+char *_strdup(char *str)
 {
 	int size = 0, i = 0;
 	char *ptr;
@@ -22,7 +22,6 @@ char *_stdrup(char *str)
 
 	if (ptr == NULL)
 		return (NULL);
-
 	for (; i < size; i++)
 		ptr[i] = str[i];
 
